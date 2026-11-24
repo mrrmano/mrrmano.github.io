@@ -41,7 +41,6 @@ website/
 │   ├── bootstrap4-neon-glow.min.css
 │   └── custom.css
 ├── js/
-│   ├── headline.js       console-style typing animation for the name
 │   └── writeups.js       loads Medium posts into the WriteUps list
 ├── files/
 │   └── Moamen-Hamed-CV.pdf
@@ -67,13 +66,9 @@ automatically.
 
 ## Customize
 
-- **Header:** most pages start with `[MRrMano]` and type back and forth
-  to `[Moamen Hamed]` in a console-style animation driven by
-  `js/headline.js`. The closing `]` stays in place and blinks with the
-  theme's `vim-caret` class, exactly like darkstar7471.com. The Experience
-  page is intentionally static `[MRrMano]`. Without JavaScript, or when
-  reduced motion is enabled, the other pages also stay as `[MRrMano]`.
-  Animated `<h1>` elements keep a stable accessible label.
+- **Header:** every page uses the same static `[MRrMano]` headline with a
+  blinking closing bracket, using the theme's `vim-caret` class exactly
+  like darkstar7471.com. There is no JavaScript animation.
 - **Headline sizing:** `css/custom.css` keeps the name at the theme's
   original 3.5rem size on desktop, on a single line, and scales it down
   on narrow screens.
