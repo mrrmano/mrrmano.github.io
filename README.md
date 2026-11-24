@@ -41,6 +41,7 @@ website/
 │   ├── bootstrap4-neon-glow.min.css
 │   └── custom.css
 ├── js/
+│   ├── headline.js       console-style typing animation for the name
 │   └── writeups.js       loads Medium posts into the WriteUps list
 ├── files/
 │   └── Moamen-Hamed-CV.pdf
@@ -66,11 +67,16 @@ automatically.
 
 ## Customize
 
-- **Header:** every page uses the same static `[MRrMano]` headline with
-  a blinking closing bracket.
+- **Header:** every page starts with `[MRrMano]` and types back and forth
+  to `[Moamen Hamed]` in a console-style animation driven by
+  `js/headline.js`, with a blinking terminal caret. Without JavaScript,
+  or when reduced motion is enabled, it stays as `[MRrMano]`. The `<h1>`
+  keeps a stable accessible label.
 - **Headline sizing:** `css/custom.css` keeps the name at the theme's
   original 3.5rem size on desktop, on a single line, and scales it down
   on narrow screens.
+- **Experience:** ordered Course Instructor, Student, then Help Desk
+  Technician.
 - **Tagline:** replace `Aspiring SOC Analyst | Python Instructor |
 CTF Player | I will be something great!` under the heading.
 - **Navigation:** Home, Projects, Profiles, Experience,
