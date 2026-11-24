@@ -61,35 +61,15 @@ a:hover {
 }
 
 /* Console-style headline: keep the name on one line and scale it down
-   on narrow screens instead of letting it wrap. */
+   on narrow screens instead of letting it wrap. The closing bracket uses
+   the theme's vim-caret blink, as on darkstar7471.com. */
 .display-2.headline {
   white-space: nowrap;
   font-size: clamp(1.75rem, 4.8vw, 3.5rem);
 }
 
-.headline-caret {
-  display: inline-block;
-  width: 0.42em;
-  height: 0.85em;
-  margin-left: 0.08em;
-  vertical-align: -0.08em;
-  background-color: var(--ds-accent-bright);
-  animation: headline-blink 1s step-end infinite;
-}
-
-.headline-caret.is-typing {
-  animation: none;
-  opacity: 1;
-}
-
-@keyframes headline-blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .headline-caret {
+  .display-2.headline .vim-caret {
     animation: none;
   }
 }

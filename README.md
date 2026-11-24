@@ -67,11 +67,13 @@ automatically.
 
 ## Customize
 
-- **Header:** every page starts with `[MRrMano]` and types back and forth
+- **Header:** most pages start with `[MRrMano]` and type back and forth
   to `[Moamen Hamed]` in a console-style animation driven by
-  `js/headline.js`, with a blinking terminal caret. Without JavaScript,
-  or when reduced motion is enabled, it stays as `[MRrMano]`. The `<h1>`
-  keeps a stable accessible label.
+  `js/headline.js`. The closing `]` stays in place and blinks with the
+  theme's `vim-caret` class, exactly like darkstar7471.com. The Experience
+  page is intentionally static `[MRrMano]`. Without JavaScript, or when
+  reduced motion is enabled, the other pages also stay as `[MRrMano]`.
+  Animated `<h1>` elements keep a stable accessible label.
 - **Headline sizing:** `css/custom.css` keeps the name at the theme's
   original 3.5rem size on desktop, on a single line, and scales it down
   on narrow screens.
