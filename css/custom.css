@@ -1,0 +1,68 @@
+/* Palette sampled from darkstar7471.com (bootstrap4-neon-glow). */
+:root {
+  --ds-bg: #0c0d16;
+  --ds-surface: #28293e;
+  --ds-surface-alt: #282a38;
+  --ds-text: #e4e2ff;
+  --ds-text-light: #dbebfb;
+  --ds-muted: #a0a0a0;
+  --ds-muted-dark: #6f6974;
+  --ds-accent: #714cdf;
+  --ds-accent-hover: #4922bd;
+  --ds-accent-bright: #986edf;
+  --ds-border: #28293e;
+}
+
+html,
+body {
+  background-color: var(--ds-bg);
+  color: var(--ds-text);
+}
+
+body {
+  border-top-color: var(--ds-border);
+}
+
+a {
+  color: var(--ds-accent);
+}
+
+a:hover {
+  color: var(--ds-accent-hover);
+}
+
+.text-light {
+  color: var(--ds-text-light) !important;
+}
+
+.text-grey {
+  color: var(--ds-muted) !important;
+}
+
+.text-darkgrey {
+  color: var(--ds-muted-dark) !important;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: var(--ds-accent);
+  color: #fff;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Static headline: keep the name on one line and scale it down on
+   narrow screens instead of letting it wrap. */
+.display-2.headline {
+  white-space: nowrap;
+  font-size: clamp(1.75rem, 4.8vw, 3.5rem);
+}
